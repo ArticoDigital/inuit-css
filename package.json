@@ -1,0 +1,50 @@
+{
+  "name": "inuitcss",
+  "version": "0.1.0",
+  "description": "Framework CSS for Artico Digital",
+  "main": "dist/inuit.css",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "production": "cross-env NODE_ENV=production webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArticoDigital/inuit-css.git"
+  },
+  "keywords": [
+    "CSS",
+    "Framework css flex"
+  ],
+  "author": "juan2ramos <juan2ramos@gmail.com> (https://juan2ramos.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArticoDigital/inuit-css/issues"
+  },
+  "homepage": "https://github.com/ArticoDigital/inuit-css#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.18.13",
+    "browser-sync-webpack-plugin": "^1.2.0",
+    "cross-env": "^5.1.1",
+    "css-loader": "^0.28.7",
+    "cssnano": "^3.10.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "node-sass": "^4.7.2",
+    "optimize-css-assets-webpack-plugin": "^3.2.0",
+    "postcss-loader": "^2.0.8",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "uglify-js": "^3.1.10",
+    "uglifyjs-webpack-plugin": "^1.1.0",
+    "webpack": "^3.8.1"
+  },
+  "dependencies": {
+    "chota": "^0.4.1",
+    "google-fonts-webpack-plugin": "^0.4.3",
+    "uglify-es": "^3.1.10"
+  }
+}
