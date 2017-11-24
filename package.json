@@ -1,6 +1,6 @@
 {
   "name": "inuit-css",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Framework CSS for Artico Digital",
   "main": "dist/inuit.min.css",
   "scripts": {
