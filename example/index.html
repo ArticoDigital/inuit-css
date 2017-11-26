@@ -1,10 +1,232 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="../dist/inuit.min.css">
+    <title>Inuit CSS</title>
+    <link rel="stylesheet" type="text/css" href="../dist/inuit.css">
 </head>
 <body>
-   <div>ok</div>
+<div class="container">
+    <h1>Título h1 </h1>
+    <h2>Título h2</h2>
+    <h3>Título h3</h3>
+    <h4>Título h4</h4>
+    <h5>Título h5</h5>
+    <h6>Título h6</h6>
+    <p>Modificar estilos base en config.sass Modificar estilos base en config.sass Modificar estilos base en config.sass
+        Modificar estilos base en config.sass Modificar estilos base en config.sass Modificar estilos base en
+        config.sass
+        Modificar estilos base en config.sass Modificar estilos base en config.sass Modificar estilos base en
+        config.sass
+        Modificar estilos base en config.sass Modificar estilos base en config.sass Modificar estilos base en
+        config.sass
+        Modificar estilos base en config.sass Modificar estilos base en config.sass Modificar estilos base en
+        config.sass
+        Modificar estilos base en config.sass </p>
+    <blockquote>
+        asdasd asdasd
+    </blockquote>
+    <hr>
+    <div>
+        <code>esto es código</code>
+        <pre>esto es código</pre>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-m-12 col-s-16" style="background: yellow;">weqe</div>
+        <div class="col-2 col-m-2 " style="background: peru;"><span>asdasdasd</span></div>
+        <div class="col-2" style="background: gray;">123</div>
+        <div class="col-6 col-s-4" style="background: yellow;">weqe</div>
+        <div class="col-6" style="background: peru;">hola</div>
+        <div class="col-4" style="background: gray;">123</div>
+    </div>
+    <section class="row">
+        <article class="col" style="background: yellow;">col</article>
+    </section>
+    <dl>
+        <dt>Definition List Title</dt>
+        <dd>This is a definition list division.</dd>
+    </dl>
+    <ol>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+    </ol>
+    <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+    </ul>
+
+    <form>
+        <fieldset>
+            <legend>Inputs</legend>
+            <p>
+                <label for="input-text">Text Input</label>
+                <input id="input-text" placeholder="Text Input" type="text">
+            </p>
+            <p>
+                <label for="input-password">Password</label>
+                <input id="input-password" placeholder="Password" type="password">
+            </p>
+            <p>
+                <label for="input_url">Web</label>
+                <input id="input_url" placeholder="http://artico.io " type="url">
+            </p>
+            <p>
+                <label for="input_email">Email </label>
+                <input id="input_email" placeholder="juan@artico.io" type="email">
+            </p>
+            <p>
+                <label for="input_phone">Tel input</label>
+                <input id="input_phone" placeholder="(57) 322 775 35379" type="tel">
+            </p>
+            <p>
+                <label for="input_search">Search</label>
+                <input id="input_search" placeholder="Search" type="search">
+            </p>
+            <p>
+                <label for="input_number">Number Input</label>
+                <input id="input_number" placeholder="777" type="number">
+            </p>
+            <p>
+                <label for="input_error" class="error">Error</label>
+                <input id="input_error" class="error" placeholder="Error Input" type="text">
+            </p>
+            <p>
+                <label for="input_success" class="valid">Success</label>
+                <input id="input_success" class="success" placeholder="Success Input" type="text">
+            </p>
+            <p>
+                <label for="input_disabledt">Disabled Text Input</label>
+                <input id="input_disabledt" placeholder="Disabled Text Input" disabled="" type="text">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Select menus</legend>
+            <p>
+                <label for="select">Select</label>
+                <select id="select">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset id="forms__checkbox">
+            <legend>Checkboxes</legend>
+            <p><input type="checkbox" id="test1"/><label for="test1">Checkbox 1</label></p>
+            <p><input type="checkbox" id="test2"/><label for="test2">Checkbox 2</label></p>
+            <p><input type="checkbox" id="test3" checked/><label for="test3">Checkbox 3</label></p>
+        </fieldset>
+        <fieldset id="radios">
+            <legend>Radio buttons</legend>
+            <p><input id="radio1" name="radio" checked="checked" type="radio"> <label for="radio1">Option 1</label></p>
+            <p><input id="radio2" name="radio" checked="checked" type="radio"> <label for="radio2">Option 2</label></p>
+            <p><input id="radio3" name="radio" checked="checked" type="radio"> <label for="radio3">Option 3</label></p>
+        </fieldset>
+        <fieldset id="forms__textareas">
+            <legend>Textareas</legend>
+            <p>
+                <label for="textarea">Textarea</label>
+                <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+            </p>
+        </fieldset>
+
+        <fieldset id="forms_html5">
+            <legend>HTML5 inputs</legend>
+            <p>
+                <label for="ic">Color input</label>
+                <input id="ic" value="#000000" type="color">
+            </p>
+            <p>
+                <label for="in">Number input</label>
+                <input id="in" min="0" max="10" value="5" type="number">
+            </p>
+            <p>
+                <label for="ir">Range input</label>
+                <input id="ir" value="10" type="range">
+            </p>
+            <p>
+                <label for="idd">Date input</label>
+                <input id="idd" value="1970-01-01" type="date">
+            </p>
+            <p>
+                <label for="idm">Month input</label>
+                <input id="idm" value="1970-01" type="month">
+            </p>
+            <p>
+                <label for="idw">Week input</label>
+                <input id="idw" value="1970-W01" type="week">
+            </p>
+            <p>
+                <label for="idt">Datetime input</label>
+                <input id="idt" value="1970-01-01T00:00:00Z" type="datetime">
+            </p>
+            <p>
+                <label for="idtl">Datetime-local input</label>
+                <input id="idtl" value="1970-01-01T00:00" type="datetime-local">
+            </p>
+        </fieldset>
+
+        <fieldset id="forms_action">
+            <legend>Action buttons</legend>
+            <p>
+                <button type="submit">ENVIAR</button>
+                <button type="button" class="secondary-button">ENVIAR</button>
+                <button type="button" class="success-button">ENVIAR</button>
+                <button type="button" class="error-button">ENVIAR</button>
+                <button type="button" class="warning-button">ENVIAR</button>
+                <button type="button" class="info-button">ENVIAR</button>
+                <button type="button" class="light-button">ENVIAR</button>
+            </p>
+            <p>
+                <button type="submit" class="radius-button">ENVIAR</button>
+                <button type="button" class="secondary-button radius-button">ENVIAR</button>
+                <button type="button" class="success-button radius-button">ENVIAR</button>
+                <button type="button" class="error-button radius-button">ENVIAR</button>
+                <button type="button" class="warning-button radius-button">ENVIAR</button>
+                <button type="button" class="info-button radius-button">ENVIAR</button>
+                <button type="button" class="light-button radius-button">ENVIAR</button>
+            </p>
+            <p>
+                <a href="#" class="button outline-primary">a button </a>
+                <a href="#" class="button outline-secondary">a button</a>
+                <a href="#" class="button outline-success">a button</a>
+                <a href="#" class="button outline-error">a button</a>
+                <a href="#" class="button outline-warning">a button</a>
+                <a href="#" class="button outline-info">a button</a>
+                <a href="#" class="button outline-light">a button</a>
+            </p>
+            <p>
+                <a href="#" class="button outline-primary radius-button">a button </a>
+                <a href="#" class="button outline-secondary radius-button">a button</a>
+                <a href="#" class="button outline-success radius-button">a button</a>
+                <a href="#" class="button outline-error radius-button">a button</a>
+                <a href="#" class="button outline-warning radius-button">a button</a>
+                <a href="#" class="button outline-info radius-button">a button</a>
+                <a href="#" class="button outline-light radius-button">a button</a>
+            </p>
+            <p>
+                <a href="#" class="button clear">a.button.clear</a>
+            </p>
+        </fieldset>
+    </form>
+    <div class="row" style="margin: 40px 0">
+        <div class="card col-5">
+            <header>
+                <h4>Card title</h4>
+            </header>
+            <p>A nisi ullam impedit molestiae, sapiente id, numquam accusantium eius cum, iste eum iusto blanditiis
+                doloribus beatae. Molestias iste explicabo libero nam, voluptas harum ipsum quod velit enim. Quae,
+                cupiditate?</p>
+            <footer class="is-right">
+                <a href="#!" class="button primary">Submit</a>
+            </footer>
+        </div>
+    </div>
+</div>
+
 </body>
+</html>

@@ -1,9 +1,4 @@
 @import "base";
-body{
-  background: tomato;
-  display: flex;
-}
-div{
-  padding: 20px;
-  color: yellow;
-}
+@import "grid";
+@import "form";
+@import "card";
