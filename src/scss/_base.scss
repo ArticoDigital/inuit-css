@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
+$is-tablet: 720px;
+$is-desktop: 1200px;
+
 :root {
   --primary-color: #538BF4;
   --secondary-color: #5A6169;
@@ -15,7 +17,7 @@
   --grid-maxWidth: 1200px;
   --grid-gutter: 1.6rem;
   --grid-columns: 16;
-  --font-family:  'Roboto', sans-serif;
+  --font-family: 'Roboto',-apple-system, BlinkMacSystemFont, Avenir, "Avenir Next", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 * {
@@ -45,7 +47,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 400;
+  font-weight: 300;
   margin: 0.8rem 0;
 }
 
@@ -91,6 +93,7 @@ p {
   font-size: 1.6rem;
   margin-top: 0;
   margin-bottom: .8rem;
+  letter-spacing: -0.16px;
 }
 
 blockquote {
@@ -114,10 +117,15 @@ table {
   text-align: left;
 }
 
+tr:nth-child(even){
+  background: #F7F8FB;
+}
+
 td,
 th {
   vertical-align: middle;
   padding: 1.2rem 0.4rem;
+  min-width: 14.4rem;
 }
 
 thead {
@@ -127,7 +135,10 @@ thead {
 tfoot {
   border-top: 2px solid var(--lightGrey-color);
 }
-
+.table-container{
+  max-width: 96%;
+  overflow-x:auto;
+}
 code,
 kbd,
 pre,
@@ -165,6 +176,10 @@ abbr[title] {
 
 img {
   max-width: 100%;
+  vertical-align: middle;
+}
+figure{
+  margin: 0;
 }
 
 fieldset {

@@ -213,6 +213,8 @@ select {
 }
 
 /* BUTTONS */
+
+
 .button,
 [type="button"],
 [type="reset"],
@@ -297,6 +299,7 @@ button[disabled]:hover {
   background-color: transparent;
   border: 1px solid var(--info-color);
   color: var(--info-color);
+
 }
 .outline-light{
   background-color: transparent;

@@ -19,40 +19,258 @@
   }
 }
 
-.col, .col-s, .col-m {
+.row  .col{
   flex: 1;
 }
-.row > *{
-  flex: 0 0 100% ;
-}
+
 @for $i from 1 through 16 {
-  .col-s-#{$i} {
-    flex: 0 0 calc((100% / (16 / #{$i})) );
-    max-width: calc((100% / (16 / #{$i})) );
+
+  .col-#{$i} {
+    flex: 0 0 calc((100% / (16 / #{$i})));
+    max-width: calc((100% / (16 / #{$i})));
 
   }
+
 }
 
-@media (min-width: 720px) {
-  .row > *{
-    flex: 0 0 100% ;
-  }
+@media (min-width: $is-tablet) {
+
   @for $i from 1 through 16 {
     .col-m-#{$i} {
-      flex: 0 0 calc((100% / (16 / #{$i})) );
-      max-width: calc((100% / (16 / #{$i})) );
+      flex: 0 0 calc((100% / (16 / #{$i})));
+      max-width: calc((100% / (16 / #{$i})));
     }
   }
 }
 
-@media (min-width: 1200px) {
-  .row > *{
-    flex: 0 0 100% ;
-  }
+@media (min-width: $is-desktop) {
+
   @for $i from 1 through 16 {
-    .col-#{$i} {
-      flex: 0 0 calc((100% / (16 / #{$i})) );
-      max-width: calc((100% / (16 / #{$i})) );
+    .col-l-#{$i} {
+      flex: 0 0 calc((100% / (16 / #{$i})));
+      max-width: calc((100% / (16 / #{$i})));
     }
   }
 }
+
+.first {
+  order: -1
+}
+
+.last {
+  order: 1
+}
+
+.is-columns {
+  flex-direction: column;
+  div:nth-child(even) {
+    padding-right: 10rem
+  }
+  div:nth-child(odd) {
+    padding-left: 10rem
+  }
+
+}
+
+//justify-content row container  Alignment & Spacing Horizontal
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-around {
+  justify-content: space-around
+}
+
+.justify-between {
+  justify-content: space-between
+}
+
+.justify-end {
+  justify-content: flex-end
+}
+
+.justify-center {
+  justify-content: center
+}
+
+.justify-evenly {
+  justify-content: space-evenly
+}
+
+// align-content row container  Alignment & Spacing Vertical
+
+.align-start {
+  align-content: flex-start;
+}
+
+.align-around {
+  align-content: space-around
+}
+
+.align-between {
+  align-content: space-between
+}
+
+.align-end {
+  align-content: flex-end
+}
+
+.align-center {
+  align-content: center
+}
+
+.align-stretch {
+  align-content: stretch
+}
+
+// align-items row container  Alignment  Vertical
+
+.align-item-start {
+  align-items: flex-start
+}
+
+.align-item-end {
+  align-items: flex-end
+}
+
+.align-item-center {
+  align-items: center
+}
+
+.align-item-baseline {
+  align-items: baseline
+}
+
+.align-item-stretch {
+  align-items: stretch
+}
+
+@media (min-width: $is-desktop) {
+  //justify-content row container  Alignment & Spacing Horizontal
+
+  .justify-start-l {
+    justify-content: flex-start;
+  }
+
+  .justify-around-l {
+    justify-content: space-around
+  }
+
+  .justify-between-l {
+    justify-content: space-between
+  }
+
+  .justify-end-l {
+    justify-content: flex-end
+  }
+
+  .justify-center-l {
+    justify-content: center
+  }
+
+  .justify-evenly-l {
+    justify-content: space-evenly
+  }
+
+  // align-content row container  Alignment & Spacing Vertical
+
+  .align-start-l {
+    align-content: flex-start;
+  }
+
+  .align-around-l {
+    align-content: space-around
+  }
+
+  .align-between-l {
+    align-content: space-between
+  }
+
+  .align-end-l {
+    align-content: flex-end
+  }
+
+  .align-center-l {
+    align-content: center
+  }
+
+  .align-stretch-l {
+    align-content: stretch
+  }
+
+}
+
+@media (min-width: $is-tablet) {
+  //justify-content row container  Alignment & Spacing Horizontal
+
+  .justify-start-m {
+    justify-content: flex-start;
+  }
+
+  .justify-around-m {
+    justify-content: space-around
+  }
+
+  .justify-between-m {
+    justify-content: space-between
+  }
+
+  .justify-end-m {
+    justify-content: flex-end
+  }
+
+  .justify-center-m {
+    justify-content: center
+  }
+
+  .justify-evenly-m {
+    justify-content: space-evenly
+  }
+
+  // align-content row container  Alignment & Spacing Vertical
+
+  .align-start-m {
+    align-content: flex-start;
+  }
+
+  .align-around-m {
+    align-content: space-around
+  }
+
+  .align-between-m {
+    align-content: space-between
+  }
+
+  .align-end-m {
+    align-content: flex-end
+  }
+
+  .align-center-m {
+    align-content: center
+  }
+
+  .align-stretch-m {
+    align-content: stretch
+  }
+
+  // align-items row container  Alignment  Vertical
+
+  .align-item-start-m {
+    align-items: flex-start
+  }
+  .align-item-end-m {
+    align-items: flex-end
+  }
+  .align-item-center-m {
+    align-items: center
+  }
+  .align-item-baseline-m {
+    align-items: baseline
+  }
+  .align-item-stretch-m {
+    align-items: stretch
+  }
+
+}
+

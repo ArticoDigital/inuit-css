@@ -1,0 +1,36 @@
+.nav {
+  display: flex;
+  min-height: 5rem;
+  align-items: stretch;
+}
+
+.nav img {
+  max-height: 4rem;
+}
+
+.nav-links a{
+  padding: 0 .8rem;
+}
+.nav a.button{
+  display: block;
+}
+.nav a:not(.button) {
+  color: var(--secondary-color);
+
+}
+.nav .active:not(.button) {
+  color: var(--primary-color);
+}
+.nav .row{
+  margin-bottom: 1.6rem;
+}
+@media (min-width: $is-tablet){
+  .nav .row{
+    margin-bottom: 0;
+  }
+}
+@media (min-width: $is-desktop){
+
+}
+
+

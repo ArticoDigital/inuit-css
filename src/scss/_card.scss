@@ -1,23 +1,40 @@
-.card {
-
-  /* Card Base: */
+.card,.card-2 {
   background: #FFFFFF;
-  box-shadow: 0 2px 3px 0 rgba(90,97,105,0.11), 0 4px 8px 0 rgba(90,97,105,0.12), 0 15px 22px 0 rgba(90,97,105,0.10), 0 7px 35px 0 rgba(90,97,105,0.10);
-  border-radius: 8px;
-  padding: 2rem 2rem;
+  border-radius: .4rem;
+  box-shadow: 0 13px 25px 0 rgba(0,0,0,0.05), 0 60px 100px 0 rgba(192,192,192,0.50);
+}
+
+.card header {
+  margin-top: 2.4rem;
+  padding: 0 3.2rem;
+  letter-spacing: -0.56px;
+}
+
+.card-content{
+  padding: 0 3.2rem;
 }
 
 .card p {
-  color: #5A6169;
   letter-spacing: -0.56px;
-  &:last-child {
+}
+
+.card footer, .card-2 footer  {
+  padding: 1.2rem 3.2rem 0;
+  margin-bottom: 2.4rem;
+}
+
+.card-2{
+  header{
+    margin-top: 0;
+    padding: 1.2rem 3.2rem .8rem;
+    letter-spacing: -0.56px;
+    background: var(--success-color);
+    color: white;
+    font-weight: 400;
+    margin-bottom: 1.6rem;
+  }
+
+  h3{
     margin: 0;
   }
-}
-.card header > * {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-size: 32px;
-  color: #212529;
-  letter-spacing: -0.56px;
 }

@@ -1,8 +1,9 @@
-const path                    = require('path');
-const webpack                 = require('webpack');
-const ExtractTextPlugin       = require("extract-text-webpack-plugin");
+const path = require('path');
+const webpack = require('webpack');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const GoogleFontsPlugin       = require("google-fonts-webpack-plugin");
+const CompressionPlugin = require('compression-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
     entry: {
@@ -21,20 +22,22 @@ const config = {
                     use: ['css-loader?sourceMap', 'postcss-loader', 'sass-loader'],
 
                 })
+            },
+            {
+                test: /\.(html)$/,
+                use: {
+                    loader: 'html-loader',
+                }
             }
         ]
     },
     plugins: [
+        new HtmlWebpackPlugin({
+            filename:   path.resolve(__dirname, 'src') + 'index.html',
+
+        }),
         new ExtractTextPlugin({
             filename: '/inuit.css?sourceMap'
-        }),
-
-        new GoogleFontsPlugin({
-            fonts: [
-                { family: "Source Sans Pro" },
-                { family: "Roboto", variants: [ "100", "300", "600", "400", "700italic" ] }
-            ],
-            local: false,
         })
     ],
     devtool: 'source-map'
@@ -43,9 +46,15 @@ const config = {
 //If true JS and CSS files will be
 if (process.env.NODE_ENV === 'production') {
     config.plugins.push(
-
         new ExtractTextPlugin('/inuit.min.css'),
-        new OptimizeCssAssetsPlugin()
+        new OptimizeCssAssetsPlugin(),
+        new CompressionPlugin({
+            asset: "[path].gz[query]",
+            algorithm: "gzip",
+            test: /\.css$/,
+            threshold: 10240,
+            minRatio: 0.8
+        })
     );
 
 }

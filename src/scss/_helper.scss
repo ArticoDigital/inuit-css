@@ -1,0 +1,127 @@
+@for $i from 0 through 20 {
+  $value: 4 * $i;
+  .margin-#{$value} {
+    margin: #{$value}px;
+  }
+  .margin-top-auto-#{$value} {
+    margin: #{$value}px auto;
+  }
+  .margin-left-auto#{$value} {
+    margin: auto #{$value}px;
+  }
+  .margin-top-less-#{$value} {
+    margin: #{$value}px 0;
+  }
+  .margin-left-less#{$value} {
+    margin: 0 #{$value}px;
+  }
+  .margin-top-#{$value} {
+    margin-top: #{$value}px;
+  }
+  .margin-left-#{$value} {
+    margin-left: #{$value}px;
+  }
+  .margin-right-#{$value} {
+    margin-right: #{$value}px;
+  }
+  .margin-bottom-#{$value} {
+    margin-bottom: #{$value}px;
+  }
+  .padding-#{$value} {
+    padding: #{$value}px;
+  }
+  .padding-top-#{$value} {
+    padding-top: #{$value}px;
+  }
+  .padding-left-#{$value} {
+    padding-left: #{$value}px;
+  }
+  .padding-ight-#{$value} {
+    margin-right: #{$value}px;
+  }
+  .padding-bottom-#{$value} {
+    margin-bottom: #{$value}px;
+  }
+}
+
+.is-shadow {
+  box-shadow: 0 2px 3px 0 rgba(90, 97, 105, 0.11), 0 4px 8px 0 rgba(90, 97, 105, 0.12), 0 15px 22px 0 rgba(90, 97, 105, 0.10), 0 7px 35px 0 rgba(90, 97, 105, 0.10);
+}
+
+.is-shadow-long {
+  box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.05), 0 60px 100px 0 rgba(192, 192, 192, 0.50);
+}
+
+.is-text-center {
+  text-align: center;
+}
+
+.is-text-left {
+  text-align: left;
+}
+
+.is-text-right {
+  text-align: right;
+}
+
+.is-text-uppercase {
+  text-transform: uppercase;
+}
+
+.is-text-lowercase {
+  text-transform: lowercase;
+}
+
+.is-text-capitalize {
+  text-transform: capitalize;
+}
+
+.is-full-screen {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.is-full-width {
+  width: 100%;
+}
+
+.is-fixed {
+  position: fixed;
+  width: 100%;
+}
+
+.is-paddingLess {
+  padding: 0 !important;
+}
+
+.is-marginLess {
+  margin: 0 !important;
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+.is-list-less {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+@media screen and (max-width: $is-desktop) {
+  .hide-phone {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $is-tablet) {
+  .hide-tablet {
+    display: none;
+  }
+}
