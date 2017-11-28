@@ -131,8 +131,7 @@ select {
   }
 
 }
-
-[type="range"] {
+input[type="range"] {
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -160,6 +159,7 @@ select {
     border: 0;
   }
   &::-webkit-slider-thumb {
+    -webkit-appearance: none;
     z-index: 2;
     position: relative;
     background: #FFFFFF;
@@ -169,6 +169,7 @@ select {
     width: 2.6rem;
     border-radius: 25px;
     cursor: pointer;
+    top: -12px;
   }
   &::-moz-range-track {
     width: 100%;
