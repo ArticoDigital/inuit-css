@@ -154,14 +154,31 @@ kbd {
   white-space: pre-wrap;
   border-radius: 4px;
   color: #c62424;
-  padding: 0.2rem 3.6rem;
+  padding: .4rem;
   background-color: #f7f7f7;
 }
 
 pre {
-  background-color: #f7f7f7;
+  background-color: #1E272C;
   padding: 1rem;
   overflow-x: auto;
+  color: white;
+}
+
+pre .nt{
+  color: #89DDF7;
+}
+pre .na{
+  color: #F07178;
+}
+pre .s{
+  color: #FFCC00;
+}
+pre .l{
+  color: #F78C6C
+}
+pre .nc{
+  color: #808080
 }
 
 pre code {

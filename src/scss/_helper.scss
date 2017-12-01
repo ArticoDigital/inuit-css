@@ -1,46 +1,62 @@
+.m-a{
+  margin: auto;
+}
 @for $i from 0 through 20 {
   $value: 4 * $i;
   .margin-#{$value} {
     margin: #{$value}px;
   }
-  .margin-top-auto-#{$value} {
+  .m-t-a-#{$value} {
     margin: #{$value}px auto;
   }
-  .margin-left-auto#{$value} {
+  .m-l-a-#{$value} {
     margin: auto #{$value}px;
   }
-  .margin-top-less-#{$value} {
+  .m-t-l-#{$value} {
     margin: #{$value}px 0;
   }
-  .margin-left-less#{$value} {
+  .m-l-l#{$value} {
     margin: 0 #{$value}px;
   }
-  .margin-top-#{$value} {
+  .m-t-#{$value} {
     margin-top: #{$value}px;
   }
-  .margin-left-#{$value} {
+  .m-l-#{$value} {
     margin-left: #{$value}px;
   }
-  .margin-right-#{$value} {
+  .m-r-#{$value} {
     margin-right: #{$value}px;
   }
-  .margin-bottom-#{$value} {
+  .m-b-#{$value} {
     margin-bottom: #{$value}px;
   }
-  .padding-#{$value} {
+
+  .p-#{$value} {
     padding: #{$value}px;
   }
-  .padding-top-#{$value} {
+  .p-t-#{$value} {
     padding-top: #{$value}px;
   }
-  .padding-left-#{$value} {
+  .p-l-#{$value} {
     padding-left: #{$value}px;
   }
-  .padding-ight-#{$value} {
-    margin-right: #{$value}px;
+  .p-r-#{$value} {
+    padding-right: #{$value}px;
   }
-  .padding-bottom-#{$value} {
+  .p-b-#{$value} {
     margin-bottom: #{$value}px;
+  }
+  .p-t-a-#{$value} {
+    padding: #{$value}px auto;
+  }
+  .p-l-a#{$value} {
+    padding: auto #{$value}px;
+  }
+  .p-t-l-#{$value} {
+    padding: #{$value}px 0;
+  }
+  .p-l-l#{$value} {
+    padding: 0 #{$value}px;
   }
 }
 

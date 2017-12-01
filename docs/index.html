@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Inuit CSS</title>
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/inuit-css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i"
-          rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../dist/inuit.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon.ico">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,13 +24,14 @@
             text-align: center;
             color: white;
         }
-        .buttons button, .buttons a{
+
+        .buttons button, .buttons a {
             margin: .4rem 0;
         }
     </style>
 </head>
 <body>
-<header class="row is-full-screen align-item-center  justify-center ">
+<header class="row is-full-screen align-center  justify-center ">
     <figure class="is-text-center">
         <svg width="214px" height="224px" viewBox="0 0 214 224" version="1.1" xmlns="http://www.w3.org/2000/svg"
              xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -107,9 +108,10 @@
     </figure>
 </header>
 <div class="container">
-    <nav id="nav" class=" nav margin-bottom-40 row ">
+
+    <nav id="nav" class=" nav m-b-40 row ">
         <div class="row  col-16 col-m-12 col-l-12 align-center ">
-            <a class="logo row col-16 col-m-4 col-l-4  align-item-center justify-center justify-start-l" href="#">
+            <a class="logo row col-16 col-m-4 col-l-4  align-center justify-center justify-start-l" href="#">
                 <svg width="143px" height="32px" viewBox="0 0 143 32" version="1.1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -124,17 +126,17 @@
                     </g>
                 </svg>
             </a>
-            <div class="row  col-16 col-m-11 col-l-11 nav-links align-item-center justify-start-m  justify-center">
+            <div class="row  col-16 col-m-11 col-l-11 nav-links align-center justify-start-m  justify-center">
                 <a class="active">Textos</a>
-                <a href="#grid" >Grillas</a>
-                <a href="#list" >Listas</a>
-                <a href="#form" >Formularios</a>
-                <a href="#card" >Tarjetas</a>
-                <a href="#alert" >Alertas</a>
-                <a href="#table" >Tablas</a>
+                <a href="#grid">Grillas</a>
+                <a href="#list">Listas</a>
+                <a href="#form">Formularios</a>
+                <a href="#card">Tarjetas</a>
+                <a href="#alert">Alertas</a>
+                <a href="#table">Tablas</a>
             </div>
         </div>
-        <div class="row col-16 col-m-4   justify-center justify-end-m align-item-center  ">
+        <div class="row col-16 col-m-4   justify-center justify-end-m align-center  ">
             <a href="https://github.com/ArticoDigital/inuit-css" class="button outline-success radius-button ">Github
                 <svg style="vertical-align: top" width="20px" height="20px" viewBox="0 0 20 20" version="1.1"
                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -151,46 +153,135 @@
 
         </div>
     </nav>
+    <div class="m-t-a-20">
+        <h2 class="is-marginLess">Instalación</h2>
+        <hr class="is-marginLess">
+    </div>
+    <p>Insertar en el código HTML</p>
+    <pre><span class="nt">&lt;link</span> <span class="na">rel=</span><span
+            class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://unpkg.com/inuit-css@latest"</span><span
+            class="nt">&gt;</span></pre>
+    <p>Instalar desde npm </p>
+    <pre><span class="s">npm install inuit-css</span></pre>
+    <p class="m-t-a-40">Descargar el zip o Fork en<a href="https://github.com/ArticoDigital/inuit-css"
+                                                     class="button outline-success radius-button m-l-8">Github
+        <svg style="vertical-align: top" width="20px" height="20px" viewBox="0 0 20 20" version="1.1"
+             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Shards---Demo-Page" transform="translate(-167.000000, -6030.000000)" fill="#17C671">
+                    <g id="GitHub-Mark" transform="translate(24.000000, 5968.000000)">
+                        <path d="M143,72.2533868 C143,76.7833822 145.865036,80.6260419 149.838761,81.9818304 C150.339083,82.0762447 150.521409,81.7596422 150.521409,81.4877292 C150.521409,81.2447699 150.512815,80.5996059 150.507904,79.7442129 C147.726357,80.3635703 147.139476,78.3695415 147.139476,78.3695415 C146.684582,77.1849574 146.028945,76.8696139 146.028945,76.8696139 C145.120998,76.2338913 146.097701,76.2464799 146.097701,76.2464799 C147.101415,76.3188641 147.629362,77.30329 147.629362,77.30329 C148.521348,78.869937 149.970134,78.417378 150.539826,78.1549064 C150.630682,77.4927479 150.889131,77.0408184 151.174591,76.784641 C148.954142,76.525946 146.619509,75.6460053 146.619509,71.7171139 C146.619509,70.5979904 147.009331,69.6821722 147.649007,68.9658829 C147.545873,68.7065584 147.202707,67.6635957 147.74723,66.2524175 C147.74723,66.2524175 148.586421,65.9767279 150.496854,67.3035628 C151.2943,67.0757097 152.150066,66.9624126 153.000307,66.9580066 C153.849934,66.9624126 154.705086,67.0757097 155.50376,67.3035628 C157.412965,65.9767279 158.250929,66.2524175 158.250929,66.2524175 C158.796679,67.6635957 158.453513,68.7065584 158.350993,68.9658829 C158.991897,69.6821722 159.378649,70.5979904 159.378649,71.7171139 C159.378649,75.6560761 157.040333,76.5227989 154.813131,76.7764585 C155.171644,77.0930609 155.491482,77.7187126 155.491482,78.6754436 C155.491482,80.045709 155.479204,81.1516145 155.479204,81.4877292 C155.479204,81.7621599 155.659689,82.0812801 156.166764,81.981201 C160.13742,80.6222653 163,76.7821233 163,72.2533868 C163,66.5904205 158.522269,62 152.999079,62 C147.477731,62 143,66.5904205 143,72.2533868 Z"
+                              id="Fill-3"></path>
+                    </g>
+                </g>
+            </g>
+        </svg>
+    </a></p>
+    <div class="m-t-a-20">
+        <h2 class="is-marginLess">Variables generales</h2>
+        <hr class="is-marginLess">
+    </div>
+
+    <pre><span class="na">:root</span> <span class="nt">{</span>
+  --primary-color: <span style="background:  #538BF4">#538BF4</span><span class="nt">;</span>
+  --secondary-color: <span style="background:  #5A6169">#5A6169</span><span class="nt">;</span>
+  --link-color: <span style="background:  #538BF4"> #538BF4</span><span class="nt">;</span>;
+  --fontPrimary--color: <span style="background: #434343">#434343</span><span class="nt">;</span>
+  --lightGrey-color:<span style="background: #E9ECEF"> #E9ECEF</span><span class="nt">;</span>
+  --darkGrey-color: <span style="background: #8FA4B8">#8FA4B8</span><span class="nt">;</span>
+  --dark-color: <span style="background: #5A6169">#5A6169</span><span class="nt">;</span>
+  --active-color: <span style="background: #007BFF">#007BFF</span><span class="nt">;</span>
+  --success-color: <span style="background: #17C671">#17C671</span><span class="nt">;</span>
+  --warning-color: <span style="background: #FFB400">#FFB400</span><span class="nt">;</span>
+  --info-color: <span style="background: #00B8D8">#00B8D8</span><span class="nt">;</span>
+  --error-color: <span style="background: #C4183C">#C4183C</span><span class="nt">;</span>
+  --grid-maxWidth: <span class="l">1200px</span><span class="nt">;</span> <span class="nc">//Máximo tamaño del .container</span>
+  --grid-gutter: <span class="l">1.6rem</span><span class="nt">;</span>
+  --grid-columns: <span class="l">16</span><span class="nt">;</span><span
+                class="nc"> //Número de columnas de la grilla</span>
+  --font-family: <span class="l">'Roboto',-apple-system, BlinkMacSystemFont, Avenir, "Avenir Next", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif</span><span
+                class="nt">;</span>
+<span class="nt">}</span>
+    </pre>
+    <p>Por defecto utilzamo la fuente de google Roboto, recuerde insertar el código de la fuente </p>
+    <pre><span class="nt">&lt;link</span> <span class="na">rel=</span><span
+            class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://fonts.googleapis.com/css?family=Roboto:300,300i,500,500i,700,700i,900,900i"</span><span
+            class="nt">&gt;</span></pre>
     <h2 class="is-marginLess">Textos</h2>
     <hr class="is-marginLess">
-    <h1>Título h1 </h1>
-    <h2>Título h2</h2>
-    <h3>Título h3</h3>
-    <h4>Título h4</h4>
-    <h5>Título h5</h5>
-    <h6>Título h6</h6>
+    <p class="m-t-20">EL tamaño de fuente por defecto root es de <code>font-size: 62.5%;</code>con esto los demás
+        tamaños de fuente
+        que hereden de root se calculan sobre 10, por ejemplo un <code>span</code> de <code>12px</code> con
+        <code>rem</code>
+        <code>span{ font-size: 1.2rem }</code></p>
+    <p>Por convención los tamaños de fuentes y espacios entre elemntos se calcular con múltiplo de 4</p>
+    <h1>Título h1 - 4rem</h1>
+    <h2>Título h2 3.2rem</h2>
+    <h3>Título h3 2.4rem </h3>
+    <h4>Título h4 2.0rem</h4>
+    <h5>Título h5 1.6rem</h5>
+    <h6>Título h6 1.2rem</h6>
+    <h3>Parrafos</h3>
     <p>es una agencia creativa con sede en Bogotá, Colombia, especializada en POSICIONAMIENTO DIGITAL.
         Si quieres que tu marca, producto o servicio sea visto por tu público objetivo y se venda por internet,
         habla conmigo. ¡Yo sé cómo hacerlo! 👊👌👍 ’’
-        Cultura Ártico → </p>
-    <p>
+        Cultura Ártico →.
         Nuestros principios, como personas y profesionales, son firmes y las aplicamos en nuestro día a día. Así
         logramos grandes relaciones de trabajo con nuestros clientes, ofreciendo un producto final al gusto de nuestros
         clientes y sus usuarios.
-    </p>
-    <p>
         Pensamos en el usuario Nos centramos en la investigación del mercado, el grupo demográfico de los usuarios de
         nuestros clientes y creamos diseños personalizados que proporcionan la experiencia de usuario más amigable y
         dinámica para ellos.
     </p>
-    <p>
-        APOYAMOS SER DIFERENTES Sabemos que encontrar un lugar bajo el sol es un reto para cualquier negocio. Trabajar
-        con nosotros es más que el desarrollo de un sitio en internet. Es entender las necesidades de cada cliente y
-        darles una solución estratégica acorde a sus necesidades de manera óptima y exitosa.
-    </p>
+
 
     <blockquote>
         blockquote
     </blockquote>
     <hr>
     <div>
-        <code>Aqúi va código con la etiqueta &#60;code&#62;</code>
-        <pre>Aqúi va código con la etiqueta &#60;pre&#62;  </pre>
+        <code>Aqúi va código el con la etiqueta &#60;code&#62;</code>
+        <pre>
+<span class="nt"> &#60;body</span> <span class="na">class="</span><span class="s">container</span><span
+                class="na">"</span> <span class="nt">&#62</span>
+   <span class="nc">&#60;!-- los comenterios van contenidos en la clase .nc  --&#62;</span>
+   <span class="nt">&#60;p&#62;</span><span class="s">las etiquetas con la clase .nt</span><span
+                class="nt">&#60;/p&#62;</span>
+   <span class="nt">&#60;p&#62;</span><span class="s">los atributos con la clase .na</span><span
+                class="nt">&#60;/p&#62;</span>
+   <span class="nt">&#60;p&#62;</span><span class="s">y las cadenas de texto con la clase .s</span><span class="nt">&#60;/p&#62;</span>
+<span class="nt"> &#60;/body&#62;  </span></pre>
     </div>
-    <div class="margin-top-auto-20">
-        <h2 id="grid" class="is-marginLess">Sistema de grillas con flex</h2>
+
+    <div class="m-t-a-20">
+        <h2 id="grid" class="is-marginLess">Sistema de grillas</h2>
         <hr class="is-marginLess">
     </div>
+    <p>El sistema de grillas esta basado en flexbox y por defecto esta configurado a 16 columnas, este número se puede
+        personalizar en las variables generales. <code> --grid-columns:</code></p>
+    <ul>
+        <li>Agregar <code>.row</code> en el elemento contenedor.</li>
+        <li>Agrege elementos hijos con la clase <code>.col</code> o <code>.col-*</code> tantos como quiera</li>
+        <li>Cada columna debe llevar la clase con la cantidad de columnas que desea de 16, es decir que si se tiene
+            <code>col-12</code>
+            divide el 100% del contenedor en 16 columnas y solo toma 12.
+        </li>
+        <li>La columnas de tamaño flexible <code>.col</code> son aquellas que abarcan el restante de espacio, es decir
+            que si se tienen 2 columnas
+            de con la clase <code>.col</code> cada una abarca 6 y 6
+        </li>
+        <li>Puede combinarse las columnas de tamaño flexible con las de tamaño fijo, por ejemplo <code>.col-12</code>,
+            <code>.col</code> y <code>.col</code> lo que genera 3 columnas una de 12 y dos de 2
+        </li>
+        <li>Las grillas estan basadas en first mobile, cuando se crea una columna por ejemplo <code>.col-12</code>
+            tomara 12 columnas en todos los dispositivos. Si se quiere dar un tamaño diferente en las diferentes
+            resoluciones se debe especificar, ejemplo<code>col-16</code> para móviles<code>col-m-10</code> para tablet y
+            <code>col-l-12</code> para disposivos de escritorio
+        </li>
+        <li>Menor a <code>720px </code>móviles, entre <code>720px </code> y <code>1200px</code> tablet y mayor a <code>1200px</code>
+            escritorio
+        </li>
+    </ul>
     <div class="row rows">
         <div class="col-16 col-m-12 col-l-10" style="background: var(--dark-color)">.col-16 .col-m-12 .col-l-10</div>
         <div class="col-16 col-m-4 col-l-6" style="background: var(--primary-color);">
@@ -200,7 +291,7 @@
         <div class="col col-m-8 col-l-4" style="background: var(--success-color);">.col .col-m-8 .col-l-4</div>
         <div class="col-4" style="background: gray;">col-4</div>
     </div>
-    <section class="row rows margin-top-auto-8">
+    <section class="row rows m-t-a-8">
         <article class="col" style="background: var(--success-color);">.col</article>
         <article class="col" style="background: var(--darkGrey-color);;">.col</article>
         <article class="col" style="background: tomato;">.col</article>
@@ -210,34 +301,112 @@
         <article class="col" style="background: var(--warning-color);;">.col</article>
         <article class="col-5" style="background: var(--error-color);">.col-5</article>
     </section>
-    <div class="margin-top-auto-20">
-        <h2 id="list"  class="is-marginLess">Listas</h2>
+    <div class="m-t-a-20">
+        <h2 class="is-marginLess">Distribución de grillas con flexbox</h2>
         <hr class="is-marginLess">
     </div>
+    <p>Centrar horizontal <code>.justify-center</code> Centrar vertical <code>.align-center </code> desde el
+        container <code>.row</code></p>
+    <div class="row align-center justify-center m-b-24" style="height: 15rem; background: #1E272C; color:white;">
+        <div style="background: #F07178" class="col-4 p-12 is-text-center">.col-4</div>
+        <div style="background: #F07178" class="col-4 p-12 is-text-center">.col-4</div>
+    </div>
+    <h3>justify-content</h3>
+    <p> Los elementos distribuyen uniformemente <code>.justify-around </code></p>
+    <div class="row align-center justify-around m-b-24" style="height: 15rem; background: #1E272C; color:white;">
+        <div style="background: #F07178" class="col-4 p-12 is-text-center">.col-4</div>
+        <div style="background: #F07178" class="col-4 p-12 is-text-center">.col-4</div>
+    </div>
+    <p> Los elementos distribuyen en la línea <code>.justify-between </code></p>
+    <div class="row align-center justify-between m-b-24" style="height: 15rem; background: #1E272C; color:white;">
+        <div style="background: #F07178" class="col-4 p-12 is-text-center">.col-4</div>
+        <div style="background: #F07178" class="col-4 p-12 is-text-center">.col-4</div>
+    </div>
+    <p> Los elementos se distribuyen de manera que el espaciado entre dos elementos (y el espacio hasta los bordes) sea
+        igual <code>.justify-evenly </code></p>
+    <div class="row align-center justify-evenly m-b-24" style="height: 15rem; background: #1E272C; color:white;">
+        <div style="background: #F07178" class="col-4 p-12 is-text-center">.col-4</div>
+        <div style="background: #F07178" class="col-4 p-12 is-text-center">.col-4</div>
+    </div>
+    <p> Los elementos distribuyen a la derecha <code>.justify-end </code></p>
+    <div class="row align-center justify-end m-b-24" style="height: 15rem; background: #1E272C; color:white;">
+        <div style="background: #F07178" class="col-4 p-12 is-text-center">.col-4</div>
+        <div style="background: #F07178" class="col-4 p-12 is-text-center">.col-4</div>
+    </div>
+    <h3>align-items</h3>
+    <p> Los elementos se estiran para ocupar todo el espacio <code>.align-stretch </code></p>
+    <div class="row align-stretch justify-center m-b-24" style="height: 15rem; background: #1E272C; color:white;">
+        <div style="background: #F07178" class="col-4 p-12 is-text-center">.col-4</div>
+        <div style="background: #F07178" class="col-4 p-12 is-text-center">.col-4</div>
+    </div>
+    <p> Los elementos se alinean abajo <code>.align-end </code></p>
+    <div class="row align-end justify-center m-b-24" style="height: 15rem; background: #1E272C; color:white;">
+        <div style="background: #F07178" class="col-4 p-12 is-text-center">.col-4</div>
+        <div style="background: #F07178" class="col-4 p-12 is-text-center">.col-4</div>
+    </div>
+    <h3>align-content</h3>
+    <p>Esto alinea los elementos de un contenedor cuando hay espacio adicional en el eje transversal, de forma similar a
+        cómo justify-content alinea los elementos individuales dentro del eje principal. <code>.align-content-end </code> <code> .align-content-baseline</code> <code>.align-content-stretch </code>
+    </p>
+    <p><b style="font-size: 2rem">Pro tip</b> En muchas ocaciones los elementos varian dependendiendo el dispositivo, igual que enlas columnas podemos variar  agregando al final de cada clase <code>*-m</code>y/o<code>*-l</code> ejemplo <code>.justify-end</code>  <code>.justify-center-m</code> <code>.justify-evenly-l</code> </p>
+
+    <div class="m-t-a-20">
+        <h2 id="list" class="is-marginLess">Listas</h2>
+        <hr class="is-marginLess">
+    </div>
+    <pre>
+<span class="nt">&#60;dl&#62;</span> Título de la lista de definiciones
+    <span class="nt">&#60;dd&#62;</span> Esta es una división de lista de definiciones.<span class="nt">&#60;/dd&#62;</span>
+<span class="nt">&#60;/dl&#62;</span></pre>
     <dl>
-        <dt>Definition List Title</dt>
+        <dt>Título de la lista de definiciones</dt>
         <dd>This is a definition list division.</dd>
     </dl>
+    <pre>
+<span class="nt">&#60;ol&#62;</span>
+    <span class="nt">&#60;li&#62;</span> List Item 1<span class="nt">&#60;/li&#62;</span>
+    <span class="nt">&#60;li&#62;</span> List Item 2<span class="nt">&#60;/li&#62;</span>
+    <span class="nt">&#60;li&#62;</span> List Item 3<span class="nt">&#60;/li&#62;</span>
+<span class="nt">&#60;/ol&#62;</span></pre>
     <ol>
         <li>List Item 1</li>
         <li>List Item 2</li>
         <li>List Item 3</li>
     </ol>
+    <pre>
+<span class="nt">&#60;ul&#62;</span>
+    <span class="nt">&#60;li&#62;</span> List Item 1<span class="nt">&#60;/li&#62;</span>
+    <span class="nt">&#60;li&#62;</span> List Item 2<span class="nt">&#60;/li&#62;</span>
+    <span class="nt">&#60;li&#62;</span> List Item 3<span class="nt">&#60;/li&#62;</span>
+<span class="nt">&#60;/ul&#62;</span></pre>
     <ul>
         <li>List Item 1</li>
         <li>List Item 2</li>
         <li>List Item 3</li>
     </ul>
+    <pre>
+<span class="nt">&#60;ul</span> <span class="na">class="</span><span class="s">is-list-less</span><span class="na">"</span><span class="nt">&#62;</span>
+    <span class="nt">&#60;li&#62;</span> List Item 1<span class="nt">&#60;/li&#62;</span>
+    <span class="nt">&#60;li&#62;</span> List Item 2<span class="nt">&#60;/li&#62;</span>
+    <span class="nt">&#60;li&#62;</span> List Item 3<span class="nt">&#60;/li&#62;</span>
+<span class="nt">&#60;/ul&#62;</span></pre>
     <ul class="is-list-less">
         <li>List Item 1</li>
         <li>List Item 2</li>
         <li>List Item 3</li>
     </ul>
-    <div class="margin-top-auto-20">
-        <h2 id="form"  class="is-marginLess">Formulario</h2>
+    <p class="m-t-12"><b style="font-size: 2rem">Pro tip</b> Para eliminar estilo de la lista basta con la clase <code>is-list-less</code></p>
+    <div class="m-t-a-20">
+        <h2 id="form" class="is-marginLess">Formulario</h2>
         <hr class="is-marginLess">
     </div>
     <form>
+        <p>Los estilos de las campos viene por defecto exeptuando los checkbox y los radio, de resto solo con crearlos sin ninguna clase extra. </p>
+        <pre>
+<span class="nt">&#60;label</span> <span class="na">for="</span><span class="s">input-text</span><span class="na">"&#62;</span> Text Input<span class="nt">&#60;/label></span>
+<span class="nt">&#60;input</span> <span class="na">id="</span><span class="s">input-text</span><span class="na">"</span> <span class="na">placeholder="</span><span class="s">Ingresa tu nombre</span><span class="na">"</span> <span class="na">type="</span><span class="s">text</span><span class="na">"</span><span class="nt">&#62;</span></pre>
+        <pre>
+<span class="nt">&#60;input</span><span class="na"> type="</span><span class="s">checkbox</span> <span class="na"> id="</span><span class="s">check1</span><span class="na">"&#62;</span> <span class="nt">&#60;label</span> <span class="na">for="</span><span class="s">check1</span><span class="nt"><span class="na">"</span>&#62;</span>checkbox 1<span class="nt">&#60;/label></span></pre>
         <fieldset>
             <legend>Inputs</legend>
             <p>
@@ -351,6 +520,12 @@
 
         <fieldset id="forms_action" class="buttons">
             <legend>Action buttons</legend>
+            <ul>
+                <li>Todos los elementos <code>.button,[type="button"],[type="reset"],[type="submit"],button </code> solo necesitan la clase del color del fondo dependiendo de su uso, esta se llama igual que los colores en las variables generales, ejemplo <code>.success-button</code>. Por defecto el color es el <code>--primary-color</code></li>
+                <li>Para que los botones tengan un border radius añadimos la clase <code>.radius-button</code></li>
+                <li>Si queremos que el boton no tenga relleno ouline-nombreColor ejemplo<code>outline-primary</code> y lo mismo para border <code>.radius-button</code> </li>
+                <li>Si necesitamos eliminar los estilos por defecto<code>class="button clear"</code> </li>
+            </ul>
             <p class="row justify-evenly">
                 <button type="submit">ENVIAR</button>
                 <button type="button" class="secondary-button">ENVIAR</button>
@@ -392,12 +567,40 @@
             </p>
         </fieldset>
     </form>
-    <div class="margin-top-auto-20">
-        <h2 id="card"  class="is-marginLess">Tarjetas</h2>
+    <div class="m-t-a-20">
+        <h2 id="card" class="is-marginLess">Tarjetas</h2>
         <hr class="is-marginLess">
     </div>
-    <div class="row justify-around margin-top-auto-40 align-item-start">
-        <div class="card col-16 col-m-7 col-l-5 margin-top-28">
+    <p>Para las tarjetas solo se debe añadir la clase <code>.card</code> como contenedor y los elemntos <code>header</code> con un <code>h2</code> y un contenedor con la clase <code>.card-content</code> para el texto y un <code>footer</code> al final</p>
+    <div class="row">
+    <pre class="col-16 col-m-8  col-l-8 ">
+<span class="nt">&#60;div</span> <span class="na">class="</span><span class="s">card</span><span class="na">"</span><span class="nt">&#62;</span>
+    <span class="nt">&#60;img</span> <span class="na">src="</span><span class="s">url</span><span class="na">"</span><span class="na"> alt="</span><span class="s">title</span><span class="na">"</span><span class="nt">&#62;</span>
+    <span class="nt">&#60;header&#62;</span>
+        <span class="nt">&#60;h2&#62;</span> Mr Robot.<span class="nt">&#60;/h2&#62;</span>
+    <span class="nt">&#60;/header&#62;</span>
+    <span class="nt">&#60;div</span> <span class="na">class="</span><span class="s">card-content</span><span class="na">"</span><span class="nt">&#62;</span>
+        <span class="nt">&#60;p&#62;</span>Contenido<span class="nt">&#60;/p&#62;</span>
+    <span class="nt">&#60;/div&#62;</span>
+    <span class="nt">&#60;footer&#62;</span>
+        <span class="nt">&#60;h2&#62;</span>Contenido footer<span class="nt">&#60;/h2&#62;</span>
+    <span class="nt">&#60;/footer&#62;</span>
+<span class="nt">&#60;/div&#62;</span></pre>
+    <pre class="col-16 col-m-8   col-l-8">
+<span class="nt">&#60;div</span> <span class="na">class="</span><span class="s">card-2</span><span class="na">"</span><span class="nt">&#62;</span>
+    <span class="nt">&#60;header&#62;</span>
+        <span class="nt">&#60;h3&#62;</span> Mr Robot.<span class="nt">&#60;/h3&#62;</span>
+    <span class="nt">&#60;/header&#62;</span>
+    <span class="nt">&#60;div</span> <span class="na">class="</span><span class="s">card-content</span><span class="na">"</span><span class="nt">&#62;</span>
+        <span class="nt">&#60;p&#62;</span>Contenido<span class="nt">&#60;/p&#62;</span>
+    <span class="nt">&#60;/div&#62;</span>
+    <span class="nt">&#60;footer&#62;</span>
+        <span class="nt">&#60;h2&#62;</span>Contenido footer<span class="nt">&#60;/h2&#62;</span>
+    <span class="nt">&#60;/footer&#62;</span>
+<span class="nt">&#60;/div&#62;</span></pre>
+    </div>
+    <div class="row justify-around m-t-a-40 align-item-start">
+        <div class="card col-16 col-m-7 col-l-5 m-t-28">
             <img src="https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/06/mrrobot_s2_cast_rami-malek2-920x518.jpg"
                  alt="">
             <header>
@@ -410,7 +613,7 @@
             </div>
             <footer><a href="#" class="button warning-button">COMPRAR</a></footer>
         </div>
-        <div class="card col-16 col-m-7 col-l-5 margin-top-28">
+        <div class="card col-16 col-m-7 col-l-5 m-t-28">
             <img src="https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/06/mrrobot_s2_cast_rami-malek2-920x518.jpg"
                  alt="">
             <header>
@@ -423,7 +626,7 @@
             </div>
             <footer><a href="#" class="button warning-button">COMPRAR</a></footer>
         </div>
-        <div class="card col-16 col-m-7 col-l-5 margin-top-28">
+        <div class="card col-16 col-m-7 col-l-5 m-t-28">
             <img src="https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/06/mrrobot_s2_cast_rami-malek2-920x518.jpg"
                  alt="">
             <header>
@@ -436,7 +639,7 @@
             </div>
             <footer><a href="#" class="button warning-button">COMPRAR</a></footer>
         </div>
-        <div class="card-2 col-16 col-m-7 col-l-5 margin-top-28">
+        <div class="card-2 col-16 col-m-7 col-l-5 m-t-28">
             <header>
                 <h3>Mr Robot.</h3>
             </header>
@@ -450,7 +653,7 @@
             </div>
             <footer><a href="#" class="button success-button">COMPRAR</a></footer>
         </div>
-        <div class="card-2 col-16 col-m-7 col-l-5 margin-top-28">
+        <div class="card-2 col-16 col-m-7 col-l-5 m-t-28">
             <header>
                 <h3>Mr Robot.</h3>
             </header>
@@ -464,7 +667,7 @@
             </div>
             <footer><a href="#" class="button success-button">COMPRAR</a></footer>
         </div>
-        <div class="card-2 col-16 col-m-7 col-l-5 margin-top-28">
+        <div class="card-2 col-16 col-m-7 col-l-5 m-t-28">
             <header>
                 <h3>Mr Robot.</h3>
             </header>
@@ -479,19 +682,22 @@
             <footer><a href="#" class="button success-button">COMPRAR</a></footer>
         </div>
     </div>
-    <div class="margin-top-auto-20">
+    <div class="m-t-a-20">
         <h2 id="alert" class="is-marginLess">Alertas</h2>
         <hr class="is-marginLess">
     </div>
+    <p>Solo se debe  añadir la clase dependiendo el uso que se necesite  <code>.alert-info, .alert-success, .alert-warning, .alert-error</code>  </p>
     <div class="alert-info"><span>¡Oye! Creo que deberías saber esto.</span></div>
     <div class="alert-success"><span>¡Yeah! ¡Todo esta bien!</span></div>
     <div class="alert-warning"><span>¡Oye! Creo que deberías saber esto.</span></div>
     <div class="alert-error"><span>¡Oh no! Algo realmente malo sucedió!</span></div>
-    <div class="margin-top-auto-20">
+    <div class="m-t-a-20">
         <h2 id="table" class="is-marginLess">Tabla</h2>
         <hr class="is-marginLess">
     </div>
-    <div class="margin-top-auto-40 table-container">
+    <p>Para las tablas no es necesario ingresar ninguna clase adicional con las etiquetas de tablas es suficiente <code>&#60;table&#62;</code>con <code>&#60;thead&#62; &#60;tr&#62; &#60;th&#62; </code> body <code>&#60;tbody&#62; &#60;tr&#62; &#60;td&#62; </code> y footer <code>&#60;tfoot&#62; &#60;tr&#62; &#60;th&#62; </code> </p>
+    <p><b style="font-size: 2rem">Pro tip</b> Es recomndable la tabla este contenida en un elemento con clase <code>.table-container"</code> para que en resoluciones pequeñas se muestre con un scroll en el horizontal</p>
+    <div class="m-t-a-40 table-container">
         <table>
             <caption>Table Caption</caption>
             <thead>
@@ -544,16 +750,61 @@
             </tbody>
         </table>
     </div>
-    <div class="margin-top-auto-20">
+    <div class="m-t-a-20">
         <h2 class="is-marginLess">Tags</h2>
         <hr class="is-marginLess">
     </div>
-    <span class="tag">Un tag</span>
-    <span class="tag">Dos tag</span>
+    <p>Solo se debe insertar las clases  <code>.tag</code> y para modificar el tamaño añadimos <code>.is-small</code> o <code>.is-large</code></p>
+    <span class="tag">tag</span>
     <span class="tag is-small">Tag small</span>
     <span class="tag is-large">Tag large</span>
-    <div class="margin-bottom-80"></div>
 
+    <div class="m-t-a-20">
+        <h2 class="is-marginLess">Helpers</h2>
+        <hr class="is-marginLess">
+    </div>
+    <ul>
+        <li><code>.is-shadow</code></li>
+        <li><code>.is-shadow-long</code></li>
+        <li><code>.is-text-center</code></li>
+        <li><code>.is-text-left</code></li>
+        <li><code>.is-text-right</code></li>
+        <li><code>.is-text-uppercase</code></li>
+        <li><code>.is-text-lowercase</code></li>
+        <li><code>.is-text-capitalize</code></li>
+        <li><code>.is-full-screen</code></li>
+        <li><code>.is-full-width</code></li>
+        <li><code>.is-fixed </code></li>
+        <li><code>.is-paddingLess</code></li>
+        <li><code>.is-marginLess</code></li>
+        <li><code>.clearfix</code></li>
+        <li><code>.is-hidden</code></li>
+        <li><code>.is-list-less</code></li>
+        <li><code>.hide-phone</code></li>
+        <li><code>.hide-tablet</code></li>
+        <li><code>.m-a</code></li>
+        <li><code>.m-t-*</code></li>
+        <li><code>.m-l-*</code></li>
+        <li><code>.m-r-*</code></li>
+        <li><code>.m-b-*</code></li>
+        <li><code>.m-r-*</code></li>
+        <li><code>.m-t-a-*</code></li>
+        <li><code>.m-l-a-*</code></li>
+        <li><code>.m-t-l-*</code></li>
+        <li><code>.m-l-l-*</code></li>
+        <li><code>.m-l-l-*</code></li>
+        <li><code>.p-a</code></li>
+        <li><code>.p-t-*</code></li>
+        <li><code>.p-l-*</code></li>
+        <li><code>.p-r-*</code></li>
+        <li><code>.p-b-*</code></li>
+        <li><code>.p-r-*</code></li>
+        <li><code>.p-t-a-*</code></li>
+        <li><code>.p-l-a-*</code></li>
+        <li><code>.p-t-l-*</code></li>
+        <li><code>.p-l-l-*</code></li>
+        <li><code>.p-l-l-*</code></li>
+    </ul>
 </div>
 </body>
 </html>

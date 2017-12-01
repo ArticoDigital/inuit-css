@@ -3,7 +3,6 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
     entry: {
@@ -19,23 +18,14 @@ const config = {
                 test: /\.scss$/,
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader?sourceMap',
-                    use: ['css-loader?sourceMap', 'postcss-loader', 'sass-loader'],
+                    use: ['css-loader?sourceMap', 'postcss-loader', 'sass-loader']
 
                 })
-            },
-            {
-                test: /\.(html)$/,
-                use: {
-                    loader: 'html-loader',
-                }
             }
+
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            filename:   path.resolve(__dirname, 'src') + 'index.html',
-
-        }),
         new ExtractTextPlugin({
             filename: '/inuit.css?sourceMap'
         })

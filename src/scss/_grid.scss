@@ -100,49 +100,49 @@
 
 // align-content row container  Alignment & Spacing Vertical
 
-.align-start {
+.align-content-start {
   align-content: flex-start;
 }
 
-.align-around {
+.align-content-around {
   align-content: space-around
 }
 
-.align-between {
+.align-content-between {
   align-content: space-between
 }
 
-.align-end {
+.align-content-end {
   align-content: flex-end
 }
 
-.align-center {
+.align-content-center {
   align-content: center
 }
 
-.align-stretch {
+.align-content-stretch {
   align-content: stretch
 }
 
 // align-items row container  Alignment  Vertical
 
-.align-item-start {
+.align-start {
   align-items: flex-start
 }
 
-.align-item-end {
+.align-end {
   align-items: flex-end
 }
 
-.align-item-center {
+.align-center {
   align-items: center
 }
 
-.align-item-baseline {
+.align-baseline {
   align-items: baseline
 }
 
-.align-item-stretch {
+.align-stretch {
   align-items: stretch
 }
 
@@ -175,30 +175,45 @@
 
   // align-content row container  Alignment & Spacing Vertical
 
-  .align-start-l {
+  .align-content-start-l {
     align-content: flex-start;
   }
 
-  .align-around-l {
+  .align-content-around-l {
     align-content: space-around
   }
 
-  .align-between-l {
+  .align-content-between-l {
     align-content: space-between
   }
 
-  .align-end-l {
+  .align-content-end-l {
     align-content: flex-end
   }
 
-  .align-center-l {
+  .align-content-center-l {
     align-content: center
   }
 
-  .align-stretch-l {
+  .align-content-stretch-l {
     align-content: stretch
   }
 
+  .align-start-l {
+    align-items: flex-start
+  }
+  .align-end-l {
+    align-items: flex-end
+  }
+  .align-center-l {
+    align-items: center
+  }
+  .align-baseline-l {
+    align-items: baseline
+  }
+  .align-stretch-l {
+    align-items: stretch
+  }
 }
 
 @media (min-width: $is-tablet) {
@@ -230,45 +245,45 @@
 
   // align-content row container  Alignment & Spacing Vertical
 
-  .align-start-m {
+  .align-content-start-m {
     align-content: flex-start;
   }
 
-  .align-around-m {
+  .align-content-around-m {
     align-content: space-around
   }
 
-  .align-between-m {
+  .align-content-between-m {
     align-content: space-between
   }
 
-  .align-end-m {
+  .align-content-end-m {
     align-content: flex-end
   }
 
-  .align-center-m {
+  .align-content-center-m {
     align-content: center
   }
 
-  .align-stretch-m {
+  .align-content-stretch-m {
     align-content: stretch
   }
 
   // align-items row container  Alignment  Vertical
 
-  .align-item-start-m {
+  .align-start-m {
     align-items: flex-start
   }
-  .align-item-end-m {
+  .align-end-m {
     align-items: flex-end
   }
-  .align-item-center-m {
+  .align-center-m {
     align-items: center
   }
-  .align-item-baseline-m {
+  .align-baseline-m {
     align-items: baseline
   }
-  .align-item-stretch-m {
+  .align-stretch-m {
     align-items: stretch
   }
 
