@@ -1,6 +1,9 @@
 .m-a{
   margin: auto;
 }
+.p-a{
+  padding: auto;
+}
 @for $i from 0 through 20 {
   $value: 4 * $i;
   .margin-#{$value} {
