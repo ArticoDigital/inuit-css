@@ -31,7 +31,7 @@ body {
   font-family: var(--font-family);
   font-size: 1.6rem;
   letter-spacing: 0.01rem;
-  line-height: 1.4;
+  line-height: 1.5;
   margin: 0;
   padding: 0; }
 
@@ -1154,6 +1154,9 @@ button[disabled]:hover {
 
 .m-a {
   margin: auto; }
+
+.p-a {
+  padding: auto; }
 
 .margin-0 {
   margin: 0px; }
